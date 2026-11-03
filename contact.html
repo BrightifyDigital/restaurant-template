@@ -1,1 +1,336 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact & Reservations | Sage & Stone</title>
+
+    <meta
+        name="description"
+        content="Contact our restaurant, check our location, and send a reservation inquiry."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="announcement-bar">
+        <p data-announcement>Fresh food. Good company. Every day.</p>
+    </div>
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="brand">
+                <span class="brand-mark" data-brand-initials>SS</span>
+                <span data-business-name>Sage & Stone</span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="#reservation" class="nav-cta">Reservations</a>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <section class="page-hero">
+
+            <div class="container page-hero-content">
+
+                <span class="eyebrow">CONTACT & VISIT</span>
+
+                <h1>Let's get you a seat at the table.</h1>
+
+                <p>
+                    Have a question, planning a visit, or organizing
+                    a special gathering? We'd be happy to hear from you.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="section-padding">
+
+            <div class="container contact-grid">
+
+                <div class="contact-details">
+
+                    <span class="eyebrow">COME FIND US</span>
+
+                    <h2>We look forward to seeing you.</h2>
+
+                    <p>
+                        Check our location and hours before stopping by.
+                        For larger groups or special requests, contact
+                        us ahead of time.
+                    </p>
+
+                    <div class="contact-detail-item">
+                        <span class="detail-label">ADDRESS</span>
+                        <span data-address>123 Main Street, Houston, TX</span>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <span class="detail-label">PHONE</span>
+                        <a data-phone-link href="tel:+10000000000">
+                            <span data-phone>(000) 000-0000</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <span class="detail-label">EMAIL</span>
+                        <a data-email-link href="mailto:hello@example.com">
+                            <span data-email>hello@example.com</span>
+                        </a>
+                    </div>
+
+                    <div class="contact-detail-item">
+                        <span class="detail-label">HOURS</span>
+                        <span data-hours>Tuesday – Sunday, 11 AM – 9 PM</span>
+                    </div>
+
+                    <a
+                        class="text-link"
+                        data-directions-link
+                        href="https://www.google.com/maps"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Get directions <span>↗</span>
+                    </a>
+
+                </div>
+
+
+                <div class="contact-form-card" id="reservation">
+
+                    <span class="eyebrow">PLAN YOUR VISIT</span>
+
+                    <h2>Send us a reservation inquiry.</h2>
+
+                    <p>
+                        Let us know a little about your visit.
+                        We'll follow up to confirm availability.
+                    </p>
+
+                    <form id="contact-form">
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="name">Your name</label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Full name"
+                                    autocomplete="name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="email">Email address</label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="date">Preferred date</label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    name="date"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-field">
+                                <label for="time">Preferred time</label>
+
+                                <input
+                                    type="time"
+                                    id="time"
+                                    name="time"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-field">
+                                <label for="guests">Number of guests</label>
+
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select guests</option>
+                                    <option value="1">1 guest</option>
+                                    <option value="2">2 guests</option>
+                                    <option value="3">3 guests</option>
+                                    <option value="4">4 guests</option>
+                                    <option value="5">5 guests</option>
+                                    <option value="6">6 guests</option>
+                                    <option value="7">7 guests</option>
+                                    <option value="8">8 guests</option>
+                                    <option value="9+">9 or more guests</option>
+                                </select>
+
+                            </div>
+
+                            <div class="form-field">
+                                <label for="occasion">Occasion</label>
+
+                                <select id="occasion" name="occasion">
+                                    <option value="Regular dining">Regular dining</option>
+                                    <option value="Birthday">Birthday</option>
+                                    <option value="Anniversary">Anniversary</option>
+                                    <option value="Business meal">Business meal</option>
+                                    <option value="Other">Other</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="message">
+                                Additional requests
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Let us know about any special requests."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="button button-primary button-full"
+                        >
+                            Send Inquiry
+                        </button>
+
+                        <p
+                            class="form-disclaimer"
+                            id="form-status"
+                            aria-live="polite"
+                        >
+                            This is a reservation request, not a confirmed booking.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="container footer-main">
+
+            <div class="footer-brand">
+                <a href="index.html" class="brand brand-footer">
+                    <span class="brand-mark" data-brand-initials>SS</span>
+                    <span data-business-name>Sage & Stone</span>
+                </a>
+
+                <p data-footer-description>
+                    Good food, good company, and a place to enjoy both.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>EXPLORE</h3>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="about.html">Our Story</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-column">
+                <h3>GET IN TOUCH</h3>
+                <a data-email-link href="mailto:hello@example.com">
+                    <span data-email>hello@example.com</span>
+                </a>
+                <a data-phone-link href="tel:+10000000000">
+                    <span data-phone>(000) 000-0000</span>
+                </a>
+                <span data-location>Houston, Texas</span>
+            </div>
+
+        </div>
+
+        <div class="container footer-bottom">
+            <p>
+                © <span data-current-year></span>
+                <span data-business-name>Sage & Stone</span>.
+                All rights reserved.
+            </p>
+            <p>Website by Brightify Digital</p>
+        </div>
+
+    </footer>
+
+</body>
+</html>
